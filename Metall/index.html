@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Металлопрокат</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="page">
+        <header class="header">
+            <h1 class="header__title">Металлопрокат</h1>
+            <nav class="header__nav">
+                <a class="header__link" href="#about__title">О компании</a>
+                <a class="header__link" href="#">Купить</a>
+                <a class="header__link" href="#">Продать</a>
+                <a class="header__link" href="#">Контакты</a>
+            </nav>
+        </header>
+
+        <div class="hero">
+            <h2 class="hero__title">Наша компания</h2>
+            <div class="hero__block">
+                <div class="hero__miniblock">
+                    <h3 class="hero_block__title">Заголовок 1</h3>
+                    <p class="hero__block__text">Текст 1</p>
+                </div>
+                <div class="hero__miniblock">
+                    <h3 class="hero_block__title">Заголовок 2</h3>
+                    <p class="hero__block__text">Текст 2</p>
+                </div>
+                <div class="hero__miniblock">
+                    <h3 class="hero_block__title">Заголовок 3</h3>
+                    <p class="hero__block__text">Текст 3</p>
+                </div>
+                <div class="hero__miniblock">
+                    <h3 class="hero_block__title">Заголовок 4</h3>
+                    <p class="hero__block__text">Текст 4</p>
+                </div>
+            </div>
+        </div>
+    
+        <main class="main">
+
+            <section class="catalog">
+                <h2 class="catalog__title">Каталог услуг</h2>
+                <div class="catalog__block">
+                    <div class="catalog__uslug">
+                        <h3 class="uslug__title">Услуга</h3>
+                        <p class="uslug__text">Текст</p>
+                    </div>
+                    <div class="catalog__uslug">
+                        <h3 class="uslug__title">Услуга</h3>
+                        <p class="uslug__text">Текст</p>
+                    </div>
+                    <div class="catalog__uslug">
+                        <h3 class="uslug__title">Услуга</h3>
+                        <p class="uslug__text">Текст</p>
+                    </div>
+                    <div class="catalog__uslug">
+                        <h3 class="uslug__title">Услуга</h3>
+                        <p class="uslug__text">Текст</p>
+                    </div>
+                </div>
+            </section>
+
+            <div class="form">
+                <form class="form" action="#" method="post">
+                <section class="form__field">
+                    <h2>Обратная связь</h2>
+                    <div class="form__row">
+                    <input class="form__input" type="tel" id="tel" name="usertel" placeholder="Введите телефон" required>
+                    <input class="form__input" type="email" id="email" name="useremail" placeholder="Введите Email" required>
+                    <input class="form__input" type="text" id="name" name="username" placeholder="Введите имя" required>
+                    </div>
+                    <label class="form__label" for="service">Выберите услугу</label>
+                    <select class="form__input" id="service" name="userservice" required>
+                        <option value="">Выберите услугу</option>
+                        <option value="pay">Купить</option>
+                        <option value="sell">Продать</option>
+                        <option value="trans">Перевезти</option>
+                        <option value="order">Заказать</option>
+                    </select>
+                    <button class="form__button" type="submit">Отправить</button>
+                </section>
+                </form>
+            </div>
+
+            <section class="about">
+                <h2 class="main__title">О компании</h2>
+                <p class="about__text">...</p>
+            </section>
+    
+
+        </main>
+    
+        <footer class="footer">
+            <p class="footer__text">Металлопрокат © 2025</p>
+        </footer>
+    </div>
+    <script>
+        function updatePlaceholders() {
+      const nameInput = document.getElementById("name");
+      const emailInput = document.getElementById("email");
+      const phoneInput = document.getElementById("tel");
+
+    if (window.innerWidth <= 768) {
+        nameInput.placeholder = "Имя";
+        emailInput.placeholder = "Email";
+        phoneInput.placeholder = "Телефон";
+        } 
+    else {
+        nameInput.placeholder = "Введите ваше имя";
+        emailInput.placeholder = "Введите ваш email";
+        phoneInput.placeholder = "Введите ваш телефон";
+        }
+    }
+
+    window.addEventListener("resize", updatePlaceholders);
+    window.addEventListener("DOMContentLoaded", updatePlaceholders);
+    </script>
+</body>
+</html>
