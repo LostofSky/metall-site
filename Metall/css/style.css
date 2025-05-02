@@ -216,7 +216,6 @@ header{
 }
 .footer__text{
     font-weight: 600;
-    margin-bottom: 1rem;
 }
 input::placeholder{
     color: white;

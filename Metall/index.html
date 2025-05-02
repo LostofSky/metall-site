@@ -12,10 +12,10 @@
         <header class="header">
             <h1 class="header__title">Металлопрокат</h1>
             <nav class="header__nav">
-                <a class="header__link" href="#about">О компании</a>
-                <a class="header__link" href="#">Купить</a>
-                <a class="header__link" href="#">Продать</a>
-                <a class="header__link" href="#">Контакты</a>
+                <a class="header__link" href="#uslug">Услуги</a>
+                <a class="header__link" href="#svyaz">Форма</a>
+                <a class="header__link" href="#about">О нас</a>
+                <a class="header__link" href="metall.html">Расценки</a>
             </nav>
         </header>
 
@@ -47,7 +47,7 @@
         <main class="main">
 
             <section class="catalog">
-                <h2 class="catalog__title">Каталог услуг</h2>
+                <h2 class="catalog__title" id="uslug">Каталог услуг</h2>
                 <div class="catalog__block">
                     <div class="catalog__uslug" data-aos="fade-up">
                         <h3 class="uslug__title">Продажа металла</h3>
@@ -71,7 +71,7 @@
             <div class="form">
                 <form class="form" action="#" method="post">
                 <section class="form__field">
-                    <h2>Обратная связь</h2>
+                    <h2 id="svyaz">Обратная связь</h2>
                     <div class="form__row">
                     <input class="form__input" type="tel" id="tel" name="usertel" placeholder="Введите телефон" required>
                     <input class="form__input" type="email" id="email" name="useremail" placeholder="Введите Email" required>
@@ -126,7 +126,7 @@
         </footer>
     </div>
 </body>
-<script src="js.js"></script>
+<script src="assets/js/index.js"></script>
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 <script>
   AOS.init();
