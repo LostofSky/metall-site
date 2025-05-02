@@ -5,13 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Металлопрокат</title>
     <link rel="stylesheet" href="css/style.css">
+    <link href="https://unpkg.com/aos@next/dist/aos.css" rel="stylesheet" />
 </head>
 <body>
     <div class="page">
         <header class="header">
             <h1 class="header__title">Металлопрокат</h1>
             <nav class="header__nav">
-                <a class="header__link" href="#about__title">О компании</a>
+                <a class="header__link" href="#about">О компании</a>
                 <a class="header__link" href="#">Купить</a>
                 <a class="header__link" href="#">Продать</a>
                 <a class="header__link" href="#">Контакты</a>
@@ -22,21 +23,24 @@
             <h2 class="hero__title">Наша компания</h2>
             <div class="hero__block">
                 <div class="hero__miniblock">
-                    <h3 class="hero_block__title">Заголовок 1</h3>
-                    <p class="hero__block__text">Текст 1</p>
+                    <h3 class="hero_block__title">Надёжность</h3>
+                    <p class="hero__block__text">Более 15 лет на рынке металлопроката</p>
                 </div>
                 <div class="hero__miniblock">
-                    <h3 class="hero_block__title">Заголовок 2</h3>
-                    <p class="hero__block__text">Текст 2</p>
+                    <h3 class="hero_block__title">Доставка</h3>
+                    <p class="hero__block__text">Оперативная логистика по всей России</p>
                 </div>
                 <div class="hero__miniblock">
-                    <h3 class="hero_block__title">Заголовок 3</h3>
-                    <p class="hero__block__text">Текст 3</p>
+                    <h3 class="hero_block__title">Сертификаты</h3>
+                    <p class="hero__block__text">Только сертифицированный металл</p>
                 </div>
                 <div class="hero__miniblock">
-                    <h3 class="hero_block__title">Заголовок 4</h3>
-                    <p class="hero__block__text">Текст 4</p>
+                    <h3 class="hero_block__title">Под заказ</h3>
+                    <p class="hero__block__text">Производим резку, упаковку и отгрузку под клиента</p>
                 </div>
+            </div>
+            <div class="hero__mobminiblock">
+                <h3 class="mobminiblock__title">Лучший сервис - за адекватную стоимость</h3>
             </div>
         </div>
     
@@ -45,21 +49,21 @@
             <section class="catalog">
                 <h2 class="catalog__title">Каталог услуг</h2>
                 <div class="catalog__block">
-                    <div class="catalog__uslug">
-                        <h3 class="uslug__title">Услуга</h3>
-                        <p class="uslug__text">Текст</p>
+                    <div class="catalog__uslug" data-aos="fade-up">
+                        <h3 class="uslug__title">Продажа металла</h3>
+                        <p class="uslug__text">Профили, трубы, лист, уголок, арматура</p>
                     </div>
-                    <div class="catalog__uslug">
-                        <h3 class="uslug__title">Услуга</h3>
-                        <p class="uslug__text">Текст</p>
+                    <div class="catalog__uslug" data-aos="fade-up">
+                        <h3 class="uslug__title">Закупка лома</h3>
+                        <p class="uslug__text">Покупаем цветной и чёрный металл</p>
                     </div>
-                    <div class="catalog__uslug">
-                        <h3 class="uslug__title">Услуга</h3>
-                        <p class="uslug__text">Текст</p>
+                    <div class="catalog__uslug" data-aos="fade-up">
+                        <h3 class="uslug__title">Резка и упаковка</h3>
+                        <p class="uslug__text">Подготовка заказа по размерам клиента</p>
                     </div>
-                    <div class="catalog__uslug">
-                        <h3 class="uslug__title">Услуга</h3>
-                        <p class="uslug__text">Текст</p>
+                    <div class="catalog__uslug" data-aos="fade-up">
+                        <h3 class="uslug__title">Доставка</h3>
+                        <p class="uslug__text">Доставим груз по всей территории РФ</p>
                     </div>
                 </div>
             </section>
@@ -78,8 +82,8 @@
                         <option value="">Выберите услугу</option>
                         <option value="pay">Купить</option>
                         <option value="sell">Продать</option>
-                        <option value="trans">Перевезти</option>
-                        <option value="order">Заказать</option>
+                        <option value="trans">Доставка</option>
+                        <option value="order">Резка и упаковка</option>
                     </select>
                     <button class="form__button" type="submit">Отправить</button>
                 </section>
@@ -87,37 +91,44 @@
             </div>
 
             <section class="about">
-                <h2 class="main__title">О компании</h2>
-                <p class="about__text">...</p>
+                <h2 class="main__title" id="about">О компании</h2>
+                <p class="about__text">ООО "Металлопрокат" — надёжный поставщик металлопроката по всей России.
+                    Мы более 15 лет работаем на рынке, предоставляя качественную продукцию и высокий уровень сервиса.
+                    В нашем ассортименте — трубы, арматура, уголки, листовой металл и многое другое.
+                    
+                    Мы сотрудничаем как с крупными строительными компаниями, так и с частными клиентами.
+                    Все товары сертифицированы, проходят строгий контроль качества и поставляются точно в срок.
+                    
+                    Предлагаем доставку, резку по размеру, упаковку и оформление заказов под ключ.
+                    Наша команда готова проконсультировать и подобрать оптимальное решение для вашего проекта.</p>
+                    <div class="about__divider"></div>
+                    <h2 class="main__title" id="maps__title">Где мы находимся</h2>
+                    <iframe class="map" src="https://yandex.ru/map-widget/v1/?um=constructor%3Af237861ca2ec92be61b3230332cab61b8592c883127a3b333796cf399c1de560&amp;source=constructor" 
+                    width="500" 
+                    height="400" 
+                    style="border: 0;"
+                    loading="lazy"></iframe>
             </section>
     
 
         </main>
-    
         <footer class="footer">
+            <div class="about__divider"></div>
+            <div class="footer__box">
             <p class="footer__text">Металлопрокат © 2025</p>
+            <nav class="footer__nav">
+                <a class="footer__link" href="#about">О компании</a>
+                <a class="footer__link" href="#">Купить</a>
+                <a class="footer__link" href="#">Продать</a>
+                <a class="footer__link" href="#">Контакты</a>
+            </nav>
+            </div>
         </footer>
     </div>
-    <script>
-        function updatePlaceholders() {
-      const nameInput = document.getElementById("name");
-      const emailInput = document.getElementById("email");
-      const phoneInput = document.getElementById("tel");
-
-    if (window.innerWidth <= 768) {
-        nameInput.placeholder = "Имя";
-        emailInput.placeholder = "Email";
-        phoneInput.placeholder = "Телефон";
-        } 
-    else {
-        nameInput.placeholder = "Введите ваше имя";
-        emailInput.placeholder = "Введите ваш email";
-        phoneInput.placeholder = "Введите ваш телефон";
-        }
-    }
-
-    window.addEventListener("resize", updatePlaceholders);
-    window.addEventListener("DOMContentLoaded", updatePlaceholders);
-    </script>
 </body>
+<script src="js.js"></script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
 </html>
